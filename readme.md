@@ -3,9 +3,9 @@
 **Live URL:** https://KevinG504.github.io/Project2/ 
 **External Repo:** https://github.com/KevinG504/Project2  
 
-**How to Demo (grader script):**  
-Open the live URL above.
-Enter city into text box.
+**How to Demo:**  
+Open the live URL above.  
+Enter city into text box.  
 Hit enter or click 'Get Weather'.
 
 ---
