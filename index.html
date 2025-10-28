@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherTrends Dashboard</title>
+  <style>
+    /* --- dashboard page styling --- */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 { margin-bottom: 20px; }
+
+    /* --- input and button --- */
+    #search-wrapper {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 70%;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    button:hover { background-color: #1976D2; }
+
+    /* --- recent cities --- */
+    #recent-cities-wrapper {
+      max-width: 400px;
+      margin: 0 auto 15px;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    /* --- weather info --- */
+    #weather-wrapper {
+      max-width: 400px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    #weather-container { margin-top: 15px; }
+
+    /* --- trend bars --- */
+    .trend-bar-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 10px;
+      height: 100px;
+    }
+
+    .trend-bar, .trend-bar.tomorrow {
+      width: 45%;
+      border-radius: 6px 6px 0 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+    }
+
+    .trend-bar { background-color: #2196F3; }
+    .trend-bar.tomorrow { background-color: #FF9800; }
+  </style>
+</head>
+<body>
+
+  <h1>WeatherTrends Dashboard</h1>
+
+  <!-- input -->
+  <div id="search-wrapper">
+    <input type="text" id="city-input" placeholder="Enter city">
+    <button id="search-btn">Get Weather</button>
+  </div>
+
+  <!-- recent cities -->
+  <div id="recent-cities-wrapper">
+    <h3>Recent Cities</h3>
+    <div id="recent-cities"></div>
+  </div>
+  
+  <!-- weather display -->
+  <div id="weather-wrapper">
+    <h2 id="city-name"></h2>
+    <p id="condition"></p>
+    <p id="current-temp"></p>
+    <p id="wind"></p>
+    <p id="tomorrow-temp"></p>
+    <div id="weather-container"></div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+
+</body>
+</html>
