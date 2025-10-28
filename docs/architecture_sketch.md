@@ -1,13 +1,14 @@
+```
 weathertrends/
-├─ index.html        
-├─ README.md		
+├─ index.html
+├─ README.md
 ├─ src/
-│  ├─ app.js           
-│  ├─ WeatherService.js 
-│  ├─ StorageManager.js 
-│  ├─ TrendVisualizer.js 
-│  ├─ UIManager.js      
-│  └─ config.js       
+│  ├─ app.js
+│  ├─ WeatherService.js
+│  ├─ StorageManager.js
+│  ├─ TrendVisualizer.js
+│  ├─ UIManager.js
+│  └─ config.js
 └─ docs/
    ├─ pitch.md
    ├─ roadmap.md
@@ -17,4 +18,5 @@ weathertrends/
    ├─ dod-sprint2.md
    ├─ dod-sprint3.md
    └─ media/
-      ├─ screenshot-1.png
+      └─ screenshot-1.png
+```
